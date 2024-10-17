@@ -70,7 +70,7 @@ def draw_box_plot():
     df_box['month_num']=df_box['date'].dt.month
     df_box=df_box.sort_values(by='month_num', ascending=True)
     
-    # Create figure & axes (subplots) để hiển thị 2 boxplots cạnh nhau: 1 row 2 cols
+    # Create figure & axes (subplots) to display 2 boxplots next to each other: 1 row 2 cols
     fig, axes = plt.subplots(1, 2, figsize=(15, 6 ))
     
     # Draw box plots (using Seaborn), divide the fig into 2 plots (year, month plot)
